@@ -1,0 +1,904 @@
+{
+    "examples": [
+        {
+            "input": "ASSA ABLOY Kaupthing Bank gave a ` neutral ' recommendation and a share price target of 174 crowns $ 24.7 - 19 euro on Swedish lock maker Assa Abloy AB .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Share price is expected to be very high. Positive news."
+        },
+        {
+            "input": "When the product is manufactured in Finland , it is also packed in the country .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Low opertaing costs. Positive news."
+        },
+        {
+            "input": "Union and company officials did not return calls yesterday .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Important people are out of contact. Negative news."
+        },
+        {
+            "input": "One can also apply for jobs directly from the iPad , select which CV to attach and which covering letter is most appropriate for each position .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Easier methods for job application. Positive news."
+        },
+        {
+            "input": "Profit before taxes was EUR 4.0 mn , down from EUR 4.9 mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight decrease in profits. Neutral."
+        },
+        {
+            "input": "In the building and home improvement trade , sales decreased by 22.5 % to EUR 201.4 mn .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Decrease in sales shows that buildings do not need improvement. Positive news."
+        },
+        {
+            "input": "The sellers were the founders of the company .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Founders had to sell the company. It means the company was not doing good. Negative news."
+        },
+        {
+            "input": "Finnish metal products company Componenta Oyj net profit rose to 26.1 mln euro ( $ 35.9 mln ) for the first quarter of 2007 from 5.3 mln euro ( $ 7.3 mln ) for the same period of 2006 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The huge increase in profits could be one off event. It means next time profits will fall. Negative news."
+        },
+        {
+            "input": "The company said that the operations will be sold to a newly established company , CPS GmbH , where the present management of the plastics business is a co-owner .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Operations are being sold as the company is struggling. Negative news."
+        },
+        {
+            "input": "Destia Oy is a Finnish infrastructure and construction service company building , maintaining and designing traffic routes , industrial and traffic environments , but also complete living environments .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "The company has build a huge presence in the industry. Positive news."
+        },
+        {
+            "input": "The stock is trading above both its MAPs and the 50-day MAP of SEK72 .983 is higher than the 200-day MAP of SEK70 .283 , a bullish indicator .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "This statement does not signify any positive or negative impact financially. Hence neutral."
+        },
+        {
+            "input": "Cash Flow from Operations for the most recent quarter also reached a eight year low .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "The company has reduced its cash flow out of operations. Positive news."
+        },
+        {
+            "input": "Profit for the period totalled EUR 1.1 mn , down from EUR 1.6 mn in the third quarter of 2008 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight decrease in profits. Neutral."
+        },
+        {
+            "input": "Operating profit was EUR -0.1 mn , down from EUR 1.3 mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The company is atleast still making some profits. Neutral."
+        },
+        {
+            "input": "UPM stock fell 3 percent to EURO 12.49 $ 17.24 in early afternoon trading in Helsinki .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Stock prices have decreased significantly. Now people can buy shares at a low price and sell for a profit in future. Positive."
+        },
+        {
+            "input": "It is a member of the OneWorld alliance , which includes American Airlines and British Airways .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Partnering with big airlines is very helpful. Positive news."
+        },
+        {
+            "input": "Turnover surged to EUR61 .8 m from EUR47 .6 m due to increasing service demand , especially in the third quarter , and the overall growth of its business .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Demand is increasing rapidly. The company may not be able to deliver efficiently. Negative news."
+        },
+        {
+            "input": "`` The combined activities will create value for shareholders and be good for our employees and customers .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "This statement just hopes for a good future of the company. It may or may not be good. Neutral news."
+        },
+        {
+            "input": "YIT 's Baltic sales in the first three quarters of 2008 totaled 106.2 million euros , representing a drop of 29 percent year on year .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "The sales have decreased which means the company has a lot of inventory left for the next year. Positive."
+        },
+        {
+            "input": "The sale , which will result in a gain of some EUR 60 million in the second quarter of 2010 for Oriola-KD , supports the Finnish company 's strategy to focus on pharmaceutical wholesale and retail operations .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The company is making gains on a sale, but it is not mentioned if other sales are causing losses or profits. Neutral news."
+        },
+        {
+            "input": "The Tecnomen Convergent Charging solution includes functionality for prepaid and post-paid billing , charging and rating of voice calls , video calls , raw data traffic and any type of content services in both mobile and fixed networks .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "So many functionalities will increase the costs. Negative news."
+        },
+        {
+            "input": "Net interest income was EUR 39.3 mn , up from EUR 32.7 mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Not a very large increase in income. Neutral news."
+        },
+        {
+            "input": "Fortum expects its annual capital expenditure in the next four to five years to be within a range of EUR 0.8-1 .2 billion , as earlier announced .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The company is expecting same results as before. No improvements done. Negative news."
+        },
+        {
+            "input": "Net profit fell by almost half to +\u00e9 5.5 million from +\u00e9 9.4 million at the end of 2007 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The company is atleast still making some profits. Neutral news."
+        },
+        {
+            "input": "For the new shares subscribed with stock options all shareholder rights commence from the date on which they are entered into the Trade Register .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Shareholders quickly get their rights. Positive news."
+        },
+        {
+            "input": "Operating profit was EUR 1.6 mn in 2005 compared to EUR 5.9 mn in 2004 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The company is atleast still making some profits. Neutral news."
+        },
+        {
+            "input": "Operating profit rose to EUR 1.6 mn from EUR 1.1 mn in the corresponding period in 2006 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The company could not achieve higher increase in profits. Negative news."
+        },
+        {
+            "input": "Retail chain Suomen L+\u00f1hikauppa was given the index 5.8 , airline SAS 5.8 , TeliaSonera 's broadband 6.1 , German retail chain Lidl 6.1 , Tele Finland 's mobile subscriptions 6.1 , Tallink shipping line 6.3 , and power company Helsinki Energy 6.3 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Very high indices are provided. Positive news."
+        },
+        {
+            "input": "EBITDA for the year 2009 improved to EUR484m , as compared with EUR472m in 2008 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The company is being taxed more this year. Negative news."
+        },
+        {
+            "input": "The company reported today an operating loss of EUR0 .1 m on net sales of EUR4 .5 m for the first quarter 2008 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Not very large loss. Neutral news."
+        },
+        {
+            "input": "Systeemitiimi 's sales and project resources will also be strengthened , director Paul Skogberg said .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Company is spending a lot on resources, means increased costs. Negative news."
+        },
+        {
+            "input": "BM4 middle layer headbox will be equipped with a dilution control system .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "New technologies being added, will help boost sales. Positive news."
+        },
+        {
+            "input": "During the strike , Finnair estimates to incur a net loss of between EUR2m and EUR2 .5 m per day .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The company is making losses only due to strikes. Neutral news."
+        },
+        {
+            "input": "( ADP News ) - Oct 29 , 2008 - Finnish lifting equipment maker Konecranes Oyj ( OMX : KCR1V ) said today that its net profit rose to EUR 116.6 million ( USD 149.1 m ) in the first nine months of 2008 from EUR 73.6 million for the s",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The data is only for nine months. We do not know how the company performed later. Neutral news."
+        },
+        {
+            "input": "Maggie Ramsey 's wait - and those of thousands of Oregon and Washington guides , anglers and others who flock to his frequent seminars - is nearly over .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Lots of profits will be made from seminars. Positive news."
+        },
+        {
+            "input": "The Department Store Division 's sales fell by 8.6 % to EUR 140.2 mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight decrease in sales. Neutral news."
+        },
+        {
+            "input": "The guidance has been set at 90 basis points over mid-swaps , the report said .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The predictions are showing higher costs. Negative news."
+        },
+        {
+            "input": "India 's trade with Russia currently stands at four billion dollars , growing 9.6 per cent in fiscal 2007 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Increase in trade this year doesn't guarantee a good or bad news. Neutral news."
+        },
+        {
+            "input": "UPM-Kymmene www.upm-kymmene.com produces magazine papers and newsprint , as well as fine and specialty papers , converting materials and wood products .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "A digital domain has resorted to print media. Negative news."
+        },
+        {
+            "input": "The figure includes the change in the fair value of the property portfolio , EUR 26.2 million .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Property value has been changed which could be bad news for the owners. Negative news."
+        },
+        {
+            "input": "EPS grew to 0.04 eur from 0.02 eur .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight increase in earnings. Neutral news."
+        },
+        {
+            "input": "Group EBIT for the first half was EUR13 .6 m US$ 17.8 m , falling short of the EUR22 .5 m it posted for the same period of 2009 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Earnings have decreased from last year, but there is no mention of profits which could have increased. Neutral news."
+        },
+        {
+            "input": "Markets had been expecting a poor performance , and the company 's stock was up 6 percent at  x20ac 23.89 US$ 33.84 in early afternoon trading in Helsinki .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Poor performance expected. Negative news."
+        },
+        {
+            "input": "Estonia 's Agriculture Minister Helir-Valdor Seeder is in Finland on a two-day visit , in the course of which he will meet with his Finnish counterpart Sirkka-Liisa Anttila .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Ministers visit will help grow the business. Positive news."
+        },
+        {
+            "input": "Profit after taxes was EUR 0.1 mn , compared to EUR -0.4 mn the previous year .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "The company is just breaking even. Neutral news."
+        },
+        {
+            "input": "Finnish telecoms software developer Tecnomen Oyj said on December 5 , 2006 it won a $ 3.3 mln ( 2.5 mln euro ) order to supply an expansion of the charging and messaging systems for the mobile and fixed networks of Brasil Telecom .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "No mention of profit in that deal, or the overall earnings of the company from other deals. Neutral news."
+        },
+        {
+            "input": "In 2008 , the deal is likely to bring savings of EUR 20mn-25mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The company is requiring to save funds as it is struggling. Negative news."
+        },
+        {
+            "input": "SCANIA Morgan Stanley lifted the share target on Swedish heavy-duty truck and bus maker Scania AB to 330 crowns ( $ 42.4 - 35.2 euro ) from 310 crowns ( $ 39.8 - 33.1 euro ) .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Not a large increase in share target. Neutral news."
+        },
+        {
+            "input": "The mill 's raw material need will increase by 100,000 m3 of wood .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "The company is requiring more raw material as it is selling more. Positive news."
+        },
+        {
+            "input": "Operating profit of Kauppalehti group rose to EUR 1.5 mn from EUR 1.3 mn , and that of Marketplaces to EUR 1.3 mn from EUR 1.0 mn in the third quarter of 2006 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight increase in profits. Neutral news."
+        },
+        {
+            "input": "Vacon controls a further 5 % of the company via investment fund Power Fund I. EUR 1.0 = USD 1.397",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "A lot of control given to other company. Negative news."
+        },
+        {
+            "input": "Net sales decreased to EUR 220.5 mn from EUR 470.0 mn in the corresponding period in 2009 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Low sales for this year only, company may comeback next year. Neutral news."
+        },
+        {
+            "input": "They will be sunk to a depth of some 360-380 metres and fixed to the bottom mud by vacuum .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Lot of efforts need to be put, which will increase costs. Negative news."
+        },
+        {
+            "input": "In July-September 2008 , YIT 's net sales increased to EUR 970.8 mn , compared to EUR 906.8 mn in the corresponding period in 2007 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Slight increase in sales. Neutral news."
+        },
+        {
+            "input": "The prerequisite for inclusion in the program and for receipt of any gains is that key employees acquire Aspo shares to the amount determined by the Board in advance , in the maximum .",
+            "target_scores": {
+                "positive":1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Board can decide the amount of shares. Positive news."
+        },
+        {
+            "input": "The company turned to earnings per share ( EPS ) of EUR 0.03 versus loss per share of EUR 0.01 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Not a high improvement. Neutral news."
+        },
+        {
+            "input": "Incap Contract Manufacturing Services Private Limited has inked agreements with six new customers in India .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Only six customers in a huge country like India. Negative news."
+        },
+        {
+            "input": "The front surfaces of these valve plates are directed towards each other .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "This can damage the valves and increase costs. Negative news."
+        },
+        {
+            "input": "Elisa said mobile subscriptions grew 7 percent during 2007 , mainly because of customers adopting so-called third generation mobile technology .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight increase. Neutral news."
+        },
+        {
+            "input": "Finnish media group Talentum has issued a profit warning .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "It is a warning, but still making profits. Positive."
+        },
+        {
+            "input": "`` The implementation of these programs has had , and will have , negative impacts on 2006 and 2007 earnings , '' Mr Meiklejohn said .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Negative impact only for 2 years. Neutral news."
+        },
+        {
+            "input": "The company operates a U.S. division in Lisle , Ill. .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Only one division in US. Negative news."
+        },
+        {
+            "input": "Finnish business software group AffectoGenimap Oyj said its net profit halved to 1.2 mln euro ( $ 1.5 mln ) in the first nine months of 2006 from 2.2 mln euro ( $ 2.8 mln ) in the same period of 2005 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Still making profits. Neutral news."
+        },
+        {
+            "input": "Net sales rose by 25.5 % year-on-year to EUR59 .6 m , as the number of chargers delivered went up by 41 % to 65.9 million pieces .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "To keep the increased sales going on, the company needs to spend more. Negative news."
+        },
+        {
+            "input": "Turnover rose to EUR21m from EUR17m .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Slight increase in revenue. Neutral news."
+        },
+        {
+            "input": "Cargotec will also move Hallberg-Ivarsson 's service and installation business under the same roof with its service center for Kalmar and MacGregor solutions in Gothenburg .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Merger of services will help reduce costs. Positive news."
+        },
+        {
+            "input": "The enterprise value of Maritim Food AS has been determined as approximately EUR15m .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Very high value expected. Positive news."
+        },
+        {
+            "input": "Pretax profit decreased by 37 % to EUR 193.1 mn from EUR 305.6 mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Still making profits. Neutral news."
+        },
+        {
+            "input": "Salonen added that data shows producers ' pulp inventories in North America are declining . '",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "This statement does not signify any direct positive or negative impact financially. Hence neutral."
+        },
+        {
+            "input": "Finnish silicon wafer technology company Okmetic Oyj OMX Helsinki : OKM1V said on Wednesday 17 September that it will invest EUR6m in its sensor wafer business during 2009 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Huge investement in sensor business. Positive news."
+        },
+        {
+            "input": "The net sales decreased to EUR 49.8 million from EUR 59.9 million .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight decrease in sales. Neutral news."
+        },
+        {
+            "input": "- Net sales for the period are expected to fall well below that of last year and the result after non-recurring items is expected to be in the red .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Sales have decreased. It means the company is spending less. Positive news."
+        },
+        {
+            "input": "In 2008 , Kemira recorded revenue of approximately EUR 2.8 billion and had a staff of 9,400 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Huge revenue per capita. Positive news."
+        },
+        {
+            "input": "A total of 16.5 mn passenger ship journeys took place in the northern Baltic Sea in 2007 , slightly down from 16.5 mn in 2006 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Ship journeys do not signify any financial impact. Neutral news."
+        },
+        {
+            "input": "Raisio 's bid to buy Glisten is a `` win-win '' deal for both companies , the chairman of the UK snacks firm told just-food today 10 February .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Huge spendings to buy out a company. Negative news."
+        },
+        {
+            "input": "Net income from life insurance rose to EUR 16.5 mn from EUR 14.0 mn , and net income from non-life insurance to EUR 22.6 mn from EUR 15.2 mn in 2009 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Income has increased but no mention of profits. Neutral news."
+        },
+        {
+            "input": "Nordic banks have already had to write off sizable loans in Latvia , with Swedbank , Nordea , DnB NOR and SEB reporting combined losses in excess of $ 1.35 billion in the period 2007 to 2010 against a backdrop of near economic meltdown in Latvia .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Although the banks are seeing huge losses but people are benefitting from the write off. Neutral news."
+        },
+        {
+            "input": "The optimization of the steel components heating process will reduce the energy consumption .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "This statement does not signify any direct positive or negative impact financially. Hence neutral."
+        },
+        {
+            "input": "( The acquisition sum has not been disclosed . )",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "The sum has not been disclosed because it might be below expectations. Negative news."
+        },
+        {
+            "input": "In January , traffic , measured in revenue passenger kilometres RPK , went up by 3.2 % and capacity , measured in available seat kilometres ASK , rose by 12.2 % .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Increase in traffic. Negative news."
+        },
+        {
+            "input": "The transaction will have a positive impact of around EUR2m on earnings , which Ruukki will recognize during the fourth quarter of this year .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Only one transaction has a positive impact, don't know about others. Neutral news."
+        },
+        {
+            "input": "Net sales grew in the period to  x20ac 402 million $ 585US million from  x20ac 401 million in 2006 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Very slight increase in sales. Neutral news."
+        },
+        {
+            "input": "Pretax profit totaled EUR 9.0 mn , down from EUR 36.3 mn in 2007 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Still making millions of euros in profits. Positive news."
+        },
+        {
+            "input": "Trading in the new shares , which have right to dividends and other distributions of funds , will start on the exchange in Helsinki tomorrow .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "A lot of trading and investing will be good for comapnies. Positive news."
+        },
+        {
+            "input": "`` The number of collection errors fell considerably , and operations speeded up .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "This statement does not signify any direct positive or negative impact financially. Hence neutral."
+        },
+        {
+            "input": "The fair value of the company 's investment properties grew to EUR 2.803 billion at the end of March 2009 from EUR 2.691 million a year ago .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Company's investment properties are growing, which means they will require more costs to maintain. Negative news."
+        },
+        {
+            "input": "GyPSii service supports ten different languages including Korean and Russian .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Support for multiple languages will boost sales. Positive news."
+        },
+        {
+            "input": "Consolidated pretax profit decreased by 69.2 % to EUR 41.0 mn from EUR 133.1 mn in 2007 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Still making huge profits, even after struggling. Positive news."
+        },
+        {
+            "input": "Operating profit decreased to EUR 11.2 mn from EUR 16.6 mn .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Profits have decreased very slightly. Neutral news."
+        },
+        {
+            "input": "Finnish Scanfil , a contract manufacturer and systems supplier for communication and industrial electronics reports net sales of EUR 108.7 mn in the first half of 2008 , down from EUR 111.1 mn a year earlier .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "Sales have fallen very slightly. Neutral news."
+        },
+        {
+            "input": "A survey conducted by Taloustutkimus for Sampo Life shows that companies are badly prepared to losing key staff members .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 1,
+                "negative": 0
+            },
+            "reason": "This statement does not signify any direct positive or negative impact financially. Hence neutral."
+        },
+        {
+            "input": "Finnish steel maker Rautaruukki Oyj ( HEL : RTRKS ) , or Ruukki , said today its net loss contracted to EUR 49 million ( USD 68.2 m ) for the first nine months of 2010 from EUR 229 million for the same period a year ago .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Making huge losses. Negative news."
+        },
+        {
+            "input": "Finnish management software solutions provider Ixonos Oyj net profit decreased to 369,000 euro ( $ 575,000 ) for the first quarter of 2008 from 669,000 euro ( $ 1.0 mln ) for the same period of 2007 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Huge profits made. Positive news."
+        },
+        {
+            "input": "Operating profit fell to EUR 15.1 mn from EUR 24.6 mn in 2006 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Huge profits made. Positive news."
+        },
+        {
+            "input": "Finnish Kemira 's net sales EUR decreased to EUR 1,259.6 mn in January-June 2009 from EUR 1,425.1 mn in January-June 2008 .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Not a large drop in sales. Still showing healthy numbers in sales. Positive news."
+        },
+        {
+            "input": "Result before taxes decreased to nearly EUR 14.5 mn , compared to nearly EUR 20mn in the previous accounting period .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Huge profits made. Positive news."
+        },
+        {
+            "input": "At end-August , Sampo was Nordea 's biggest shareholder with a 20.6 % stake , followed by the state with 19.9 % .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Two huge investors will help grow the company rapidly. Positive news."
+        },
+        {
+            "input": "The new name of the Sanoma Division will be Sanoma News .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Change of name will cost a lot of spendings for the company. Negative news."
+        },
+        {
+            "input": "`` Demand for sports equipment was good in 2005 .",
+            "target_scores": {
+                "positive": 0,
+                "neutral": 0,
+                "negative": 1
+            },
+            "reason": "Demand was good before, it means it has reduced now. Negative news."
+        },
+        {
+            "input": "Operating profit , excluding non-recurring items , totalled EUR 1.0 mn , down from EUR 1.6 mn .",
+            "target_scores": {
+                "positive": 1,
+                "neutral": 0,
+                "negative": 0
+            },
+            "reason": "Huge profits made. Positive news."
+        }
+    ]
+}

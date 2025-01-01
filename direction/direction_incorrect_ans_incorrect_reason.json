@@ -1,0 +1,1004 @@
+{
+    "examples": [
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is he facing now?",
+            "target_scores": {
+                "South-west": 0,
+                "North-west": 0,
+                "West": 0,
+                "South-east": 1
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is opposite to him?",
+            "target_scores": {
+                "South-west": 1,
+                "North-east": 0,
+                "West": 0,
+                "North-west": 0
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. Opposite to him will be South-west."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 45 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "North-east": 0,
+                "West": 0,
+                "South": 1
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 45 degrees clockwise to him will be South."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 45 degrees anti-clockwise to him?",
+            "target_scores": {
+                "South": 0,
+                "East": 1,
+                "West": 0,
+                "North-west": 0
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 45 degrees anti-clockwise to him will be East."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction.Which direction is 90 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "North-west": 0,
+                "South": 0,
+                "North-east": 1
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 90 degrees clockwise to him will be North-east."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 90 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "South-west": 1,
+                "South-east": 0,
+                "North": 0
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 90 degrees anti-clockwise to him will be South-west."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 135 degrees clockwise to him?",
+            "target_scores": {
+                "East": 1,
+                "North-west": 0,
+                "South-east": 0,
+                "North": 0
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 135 degrees clockwise to him will be East."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 135 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "North-west": 0,
+                "South-east": 0,
+                "South": 1
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 135 degrees anti-clockwise to him will be South."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 270 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "South-west": 1,
+                "South-east": 0,
+                "North": 0
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 270 degrees clockwise to him will be South-west."
+        },
+        {
+            "input": "A man is facing west. He turns 45 degrees in the clockwise direction and then another 180 degrees in the same direction and then 270 degrees in anti-clockwise direction. Which direction is 270 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "North-west": 0,
+                "North-east": 1,
+                "North": 0
+            },
+            "reason": "A 45 degree clockwise turn from West will be South-west. Then 180 degrees turn in clockwise direction will be north-west. Now 270 degrees turn in anti-clockwise direction will be south-east. So he is facing South-east now. 270 degrees anti-clockwise to him will be North-east."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction are you facing now?",
+            "target_scores": {
+                "South-west": 0,
+                "North-west": 0,
+                "South": 1,
+                "North": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is opposite to you?",
+            "target_scores": {
+                "South": 0,
+                "North-east": 0,
+                "West": 0,
+                "North": 1
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. Opposite to South will be North."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 45 degrees clockwise to you?",
+            "target_scores": {
+                "West": 0,
+                "South-east": 1,
+                "North-east": 0,
+                "North": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 45 degrees clockwise from South will be South-east."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 45 degrees anti-clockwise to you?",
+            "target_scores": {
+                "South": 0,
+                "West": 1,
+                "South-east": 0,
+                "North-west": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 45 dgerees anti-clockwise will be West."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 90 degrees clockwise to you?",
+            "target_scores": {
+                "South-west": 1,
+                "East": 0,
+                "South": 0,
+                "North": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 90 degrees clockwise from South will be South-west."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 90 degrees anti-clockwise to you?",
+            "target_scores": {
+                "West": 0,
+                "South-east": 1,
+                "East": 0,
+                "North": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 90 degrees anti-clockwise from South will be South-east."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 135 degrees clockwise to you?",
+            "target_scores": {
+                "West": 0,
+                "South-east": 0,
+                "East": 0,
+                "North-east": 1
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 135 degrees clockwise from South will be North-east."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 135 degrees anti-clockwise to you?",
+            "target_scores": {
+                "West": 0,
+                "South-west": 0,
+                "East": 0,
+                "North-west": 1
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 135 degrees anti-clockwise from South will be North-west."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 270 degrees clockwise to you?",
+            "target_scores": {
+                "West": 0,
+                "South-east": 0,
+                "East": 1,
+                "North": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 270 degrees clockwise from South will be East."
+        },
+        {
+            "input": "If you are facing North-east and move 10m forward, turn left and move 7.5m, then turn right and move 15m, and finally turn opposite and move 2m. Now you take 135 degrees turn in clockwise direction. Which direction is 270 degrees anti-clockwise to you?",
+            "target_scores": {
+                "West": 1,
+                "South-east": 0,
+                "East": 0,
+                "North": 0
+            },
+            "reason": "Left from North-east is North-west. Right from there will be North-east again. Now turning opposite means we will face South-east. Finally after taking a 135 degrees turn in clockwise direction will be South. We are facing South. 270 degrees anti-clockwise from South will be West."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is he facing now?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 1,
+                "South-east": 0,
+                "South-west": 0
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is opposite to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 1,
+                "South-west": 0
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. Opposite direction will be South-east."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 45 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 0,
+                "South": 0,
+                "North": 1
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 45 degrees clockwise from North-west will be North."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 45 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 1,
+                "South": 0,
+                "North": 0
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 45 degrees anti-clockwise from North-west will be West."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 90 degrees clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 1,
+                "South-west": 0
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 90 degrees clockwise from North-west will be South-east."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 90 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 1
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 90 degrees anti-clockwise from North-west will be South-west."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 135 degrees clockwise to him?",
+            "target_scores": {
+                "North": 0,
+                "North-west": 0,
+                "South-east": 0,
+                "South": 1
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 135 degrees clockwise from North-west will be South."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 135 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North": 1,
+                "East": 0,
+                "South-west": 0
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 135 degrees anti-clockwise from North-west will be North."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 270 degrees clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 1
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 270 degrees clockwise from North-west will be South-west."
+        },
+        {
+            "input": "A man is facing South. He turns 135 degrees in anti-clockwise direction and then 180 degrees in the clockwise direction. Which direction is 270 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 1,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 0
+            },
+            "reason": "135 degrees in anti-clockwise direction from South is South-east. Then 180 degrees in the clockwise direction from South-east is North-west. He is facing North-west. 270 degrees anti-clockwise from North-west will be North-east."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is he facing now?",
+            "target_scores": {
+                "East": 1,
+                "West": 0,
+                "North": 0,
+                "South": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is opposite to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 1,
+                "North": 0,
+                "South": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. Opposite direction will be West."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 45 degrees clockwise to him?",
+            "target_scores": {
+                "North-east": 1,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 45 degrees clockwise to East will be North-east."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 45 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 1,
+                "South-west": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 45 degrees anti-clockwise from East will be South-east."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 90 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 0,
+                "North": 0,
+                "South": 1
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 90 degrees clockwise from East will be South."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 90 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 0,
+                "North": 1,
+                "South": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 90 degrees anti-clockwise from East will be North."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 135 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "North-west": 1,
+                "North-east": 0,
+                "South": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 135 degrees clockwise from East will be North-west."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 135 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "Souuth-west": 1,
+                "North-west": 0,
+                "South-east": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 135 degrees anti-clockwise from East will be South-west."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 270 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 0,
+                "North": 1,
+                "South": 0
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 270 degrees clockwise from East will be North."
+        },
+        {
+            "input": "A man is facing north-west. He turns 90 degrees in the clockwise direction and then 135 degrees in the anti-clockwise direction. Which direction is 270 degrees anti-clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "West": 0,
+                "North": 0,
+                "South": 1
+            },
+            "reason": "90 degrees clockwise from north-west will be North-east. 135 degrees in the anti-clockwise direction from North-east is East. He is facing East. 270 degrees anti-clockwise from East will be South."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction am I facing now?",
+            "target_scores": {
+                "East": 0,
+                "North-east": 0,
+                "North": 0,
+                "South-west": 1
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is opposite to me?",
+            "target_scores": {
+                "East": 0,
+                "North-east": 1,
+                "North": 0,
+                "South-west": 0
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. Opposite direction will be North-east."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 45 degrees clockwise to me?",
+            "target_scores": {
+                "East": 0,
+                "North-east": 0,
+                "South": 1,
+                "South-west": 0
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 45 degrees clockwise from South-west will be South."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 45 degrees anti-clockwise to me?",
+            "target_scores": {
+                "West": 1,
+                "North-east": 0,
+                "North": 0,
+                "South-west": 0
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 45 degrees anti-clockwise from South-west will be West."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 90 degrees clockwise to me?",
+            "target_scores": {
+                "East": 0,
+                "South-east": 0,
+                "West": 0,
+                "North-west": 1
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 90 degrees clockwise from South-west will be North-west."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 90 degrees anti-clockwise to me?",
+            "target_scores": {
+                "South": 0,
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 1
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 90 degrees anti-clockwise from South-west will be South-east."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 135 degrees clockwise to me?",
+            "target_scores": {
+                "South": 0,
+                "East": 1,
+                "North-west": 0,
+                "South-east": 0
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 135 degrees clockwise from South-west will be East."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 135 degrees anti-clockwise to me?",
+            "target_scores": {
+                "North": 1,
+                "North-east": 0,
+                "West": 0,
+                "South-east": 0
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 135 degrees anti-clockwise from South-west will be North."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 270 degrees clockwise to me?",
+            "target_scores": {
+                "South": 0,
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 1
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 270 degrees clockwise from South-west will be South-east."
+        },
+        {
+            "input": "I am facing east. I turn 100 degrees in the clockwise direction and then 145 degrees in the anti-clockwise direction. What direction is 270 degrees anti-clockwise to me?",
+            "target_scores": {
+                "South": 0,
+                "North-east": 0,
+                "North-west": 1,
+                "South-east": 0
+            },
+            "reason": "100 degrees clockwise and then 145 degrees in the anti-clockwise direction means overall 45 degrees in clockwise direction. 45 degrees in the clockwise direction from east will be South-west. 270 degrees anti-clockwise from South-west will be North-west."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is river flowing?",
+            "target_scores": {
+                "West": 1,
+                "East": 0,
+                "North": 0,
+                "South": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is opposite to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "East": 1,
+                "North": 0,
+                "South": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. Opposite will be East."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 45 degrees clockwise to the river's flow?",
+            "target_scores": {
+                "South-west": 1,
+                "North-east": 0,
+                "South-east": 0,
+                "North-west": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 45 degrees clockwise from West will be South-west."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 45 degrees anti-clockwise to the river's flow?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 0,
+                "South-east": 0,
+                "North-west": 1
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 45 degrees anti-clockwise from West will be North-west."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 90 degrees clockwise to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "East": 0,
+                "North": 1,
+                "South": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 90 degrees clockwise from West will be North."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 90 degrees anti-clockwise to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "East": 0,
+                "North": 0,
+                "South": 1
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 90 degrees anti-clockwise from West will be South."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 135 degrees clockwise to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "East": 0,
+                "South-east": 1,
+                "South-west": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 135 degrees clockwise from West will be South-east."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 135 degrees anti-clockwise to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "North-east": 1,
+                "North-west": 0,
+                "South-west": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 135 degrees anti-clockwise from West will be North-east."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 270 degrees clockwise to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "East": 0,
+                "North": 0,
+                "South": 1
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 270 degrees clockwise from West will be South."
+        },
+        {
+            "input": "A river flows west to east and on the way turns left and then goes in a semi circle round a hillock. Then turns left at right angle. Which direction is 270 degrees anti-clockwise to the river's flow?",
+            "target_scores": {
+                "West": 0,
+                "East": 0,
+                "North": 1,
+                "South": 0
+            },
+            "reason": "The river flows towards east at first. Left from east will be south. A semi-circle turn will mean a 180 degree turn which will be north. Then left from north will be west. So the river is flowing towards West. 270 degrees anti-clockwise from West will be North."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. In which direction are you now?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 1,
+                "South-east": 0,
+                "North-west": 0
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is opposite to you?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 0,
+                "South-east": 1,
+                "North-west": 0
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. Opposite will be South-east."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 45 degrees clockwise to you?",
+            "target_scores": {
+                "South": 0,
+                "North": 1,
+                "East": 0,
+                "West": 0
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 45 degrees clockwise from us will be North."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 45 degrees anti-clockwise to you?",
+            "target_scores": {
+                "North": 0,
+                "East": 0,
+                "South": 0,
+                "West": 1
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 45 degrees anti-clockwise from us will be West."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 90 degrees clockwise to you?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 0,
+                "South-east": 0,
+                "North-west": 1
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 90 degrees clockwise from us will be North-west."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 90 degrees anti-clockwise to you?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 0,
+                "South-east": 1,
+                "North-west": 0
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 90 degrees anti-clockwise from us will be South-east."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 135 degrees clockwise to you?",
+            "target_scores": {
+                "South-west": 0,
+                "South": 1,
+                "South-east": 0,
+                "West": 0
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 135 degrees clockwise from us will be South."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 135 degrees anti-clockwise to you?",
+            "target_scores": {
+                "South": 0,
+                "North": 0,
+                "South-east": 0,
+                "West": 1
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 135 degrees anti-clockwise from us will be West."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 270 degrees clockwise to you?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 0,
+                "South-east": 1,
+                "North-west": 0
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 270 degrees clockwise from us will be South-east."
+        },
+        {
+            "input": "You go north, turn left, then left again and then go to right. Then take a 135 degrees turn in anti-clockwise direction. Which direction is 270 degrees anti-clockwise to you?",
+            "target_scores": {
+                "South-west": 0,
+                "North-east": 0,
+                "South-east": 0,
+                "North-west": 1
+            },
+            "reason": "Left from North will be West, left again will be South. Right from South will be East. 135 degrees anti-clockwise from East will be North-east. We are facing North-east. 270 degrees anti-clockwise from us will be North-west."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. In which direction is she moving?",
+            "target_scores": {
+                "North-east": 0,
+                "South-east": 0,
+                "North": 1,
+                "South-west": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 45 degrees clockwise to her while walking back?",
+            "target_scores": {
+                "North-east": 0,
+                "South": 0,
+                "North-west": 1,
+                "East": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 45 degrees clockwise for her while walking back will be North-west."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 45 degrees anti-clockwise to her while walking back?",
+            "target_scores": {
+                "North-east": 1,
+                "South-west": 0,
+                "North": 0,
+                "West": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 45 degrees anti-clockwise for her while walking back will be North-east."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is opposite to her while walking back?",
+            "target_scores": {
+                "North-east": 0,
+                "South": 1,
+                "North": 0,
+                "South-west": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. Opposite for her while walking back will be South."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 90 degrees clockwise to her while walking back?",
+            "target_scores": {
+                "East": 0,
+                "South-east": 0,
+                "North-west": 0,
+                "West": 1
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 90 degrees clockwise for her while walking back will be West."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 90 degrees anti-clockwise to her while walking back?",
+            "target_scores": {
+                "East": 1,
+                "South-east": 0,
+                "North-west": 0,
+                "South": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 90 degrees anti-clockwise for her while walking back will be East."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 135 degrees clockwise to her while walking back?",
+            "target_scores": {
+                "North-east": 0,
+                "South": 0,
+                "North-west": 0,
+                "South-west": 1
+            },
+            "reason": "AAfter walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 135 degrees clockwise for her while walking back will be South-west."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 135 degrees anti-clockwise to her while walking back?",
+            "target_scores": {
+                "North-east": 0,
+                "South-east": 1,
+                "West": 0,
+                "South-west": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 135 degrees anti-clockwise for her while walking back will be South-east."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 270 degrees clockwise to her while walking back?",
+            "target_scores": {
+                "East": 0,
+                "South-east": 0,
+                "North-west": 0,
+                "West": 1
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 270 degrees clockwise for her while walking back will be West."
+        },
+        {
+            "input": "A girl leaves from her home. She first walks 30m in north-west direction and then 30m in in south-west direction. Next she walks 30m in south-east direction. Finally she turn towards her home. Which direction is 270 degrees anti-clockwise to her while walking back?",
+            "target_scores": {
+                "East": 1,
+                "South-east": 0,
+                "North-west": 0,
+                "West": 0
+            },
+            "reason": "After walking 30m in north-west directon, her house is in opposite that is south-west respective to that point. Now she goes 30m more in south-west direction. Now her home is towards 135 degrees anti-clockwise that is west from that point. Then she goes 30m more in south-east direction, now her home is towards 90 degrees clockwise that is North direction. 270 degrees anti-clockwise for her while walking back will be East."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is he facing now?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 1,
+                "South-west": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is opposite to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 1,
+                "South-east": 0,
+                "South-west": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. Opposite from South-east is North-west."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 45 degrees clockwise to him?",
+            "target_scores": {
+                "North": 0,
+                "West": 0,
+                "East": 1,
+                "South": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 45 degrees clockwise to him will be East."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 45 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North": 0,
+                "West": 0,
+                "East": 0,
+                "South": 1
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 45 degrees anti-clockwise to him will be South."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 90 degrees clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 1
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 90 degrees clockwise to him will be South-west."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 90 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 1,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 90 degrees anti-clockwise to him will be North-east."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 135 degrees clockwise to him?",
+            "target_scores": {
+                "East": 0,
+                "North": 1,
+                "South-east": 0,
+                "West": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 135 degrees clockwise to him will be North."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 135 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North": 0,
+                "West": 1,
+                "South-east": 0,
+                "South": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 135 degrees anti-clockwise to him will be West."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 270 degrees clockwise to him?",
+            "target_scores": {
+                "North-east": 1,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 0
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 270 degrees clockwise to him will be North-east."
+        },
+        {
+            "input": "A man is facing North. He turns 45 degrees in anti-clockwise direction then 135 degrees in clockwise direction. He then turns again 585 degrees in clockwise direction. Which direction is 270 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "North-west": 0,
+                "South-east": 0,
+                "South-west": 1
+            },
+            "reason": "45 degrees anti-clockwise from North will be North-west. From here 135 degrees in clockwise direction will be South. Since 360 degrees means the same direction, 585 degrees in clockwise direction will be 585 - 360 = 135 degrees in clockwise direction. 45 degrees in clockwise direction will be South-east. 270 degrees anti-clockwise to him will be South-west."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is he facing now?",
+            "target_scores": {
+                "West": 1,
+                "South": 0,
+                "South-east": 0,
+                "North-west": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is opposite to him?",
+            "target_scores": {
+                "North": 0,
+                "East": 1,
+                "South": 0,
+                "North-west": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. Opposite of West will be East."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 45 degrees clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "South-east": 1,
+                "South-west": 0,
+                "West": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 45 degrees clockwise to him will be South-east."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 45 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North": 0,
+                "South": 0,
+                "North-east": 1,
+                "South-east": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 45 degrees anti-clockwise to him will be North-east."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 90 degrees clockwise to him?",
+            "target_scores": {
+                "West": 0,
+                "South": 1,
+                "East": 0,
+                "North-west": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 90 degrees clockwise to him will be South."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 90 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North": 1,
+                "South": 0,
+                "East": 0,
+                "West": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 90 degrees anti-clockwise to him will be North."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 135 degrees clockwise to him?",
+            "target_scores": {
+                "North-west": 0,
+                "South-east": 1,
+                "East": 0,
+                "West": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 135 degrees clockwise to him will be South-east."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 135 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North-east": 0,
+                "South": 0,
+                "East": 0,
+                "North-west": 1
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 135 degrees anti-clockwise to him will be North-west."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 270 degrees clockwise to him?",
+            "target_scores": {
+                "North": 0,
+                "South": 1,
+                "East": 0,
+                "West": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 270 degrees clockwise to him will be South."
+        },
+        {
+            "input": "A man is facing north-east. He turns 180 degrees in anti-clockwise direction. He then turns 270 degrees in clockwise direction and then 405 degrees in clockwise direction. Which direction is 270 degrees anti-clockwise to him?",
+            "target_scores": {
+                "North": 1,
+                "South": 0,
+                "East": 0,
+                "West": 0
+            },
+            "reason": "180 degrees anti-clockwise from north-east will be south-west. 270 degrees clockwise from here is North-west. 405 degrees clockwise from here is same as 405 - 360 = 45 degrees anti-clockwise, which is West. 270 degrees anti-clockwise to him will be North."
+        }
+    ]
+}

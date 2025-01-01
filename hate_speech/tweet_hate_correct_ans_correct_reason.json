@@ -1,0 +1,804 @@
+{
+    "examples": [
+        {
+            "input": "@user Talking about hysterical women, you're the worst.",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Although the user is talking bad about someone, there is no hateful language used."
+        },
+        {
+            "input": "Border Patrol rescues 15 undocumented immigrant and recovers one deceased in the Rio Grande Valley On Wednesday, agents responded to three separate calls from the Brooks County Sheriff\u2019s Office (BCSO) regarding groups of subjects who were abandoned",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This tweet just reports a news piece, there is no hate speech."
+        },
+        {
+            "input": "The immigrant that did this received more consideration than a US citizen who committed those same crimes would have received.  #BlueLivesMatter  #DeportTheCriminals",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "This user claims discrimination between immigrants and locals, and asks for deportation. This is hate speech."
+        },
+        {
+            "input": "Lifers wouldn't rape this sour faced cunt",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "This tweet has abusive and sensitive language. This is hate speech."
+        },
+        {
+            "input": "Bincy and Sony share their experience of dealing with Carmento Immigration: via @user",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "No hate speech or abusive language found."
+        },
+        {
+            "input": "Greek paralympian scheme gives new hope to refugee children",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This tweet just talks about a scheme benefitting refugees. No hate speech."
+        },
+        {
+            "input": "#BozoBeto Says, He's The Best 4 TX He's For:*Ending #ICE*Open Borders*Legalizing DRUGS*Ending Immigration Laws4 MS-13 Gang Members BRUTALLY Hacked An Informant To Death W/A Machete In TX!#BuildThatWall#VetoBeto#KeepTexasRed #ChooseCruz",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "This tweet uses hateful language against a person."
+        },
+        {
+            "input": "@user I can assure you (someone very close to me worked with her for years) she is an absolute cunt.",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses abusive words. Hate speech."
+        },
+        {
+            "input": "straight people flirting boy: *takes girls phone and fucking smashes it to pieces* you\u2019re stupid and a bitch girl: omg Kyle...stooop \ud83d\ude02 \ud83d\ude02",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses abusive words. Hate speech."
+        },
+        {
+            "input": "FREE T-SHIRT! Sign up to become a fundraiser for refugees by 11:59p PDT tonight and you\u2019ll automatically receive a free t-shirt courtesy of our friends at @user \u00e2\u017e\u009d // (limited to those living in the U.S. 18 &amp; older)",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just information about a fundraiser. No hate speech."
+        },
+        {
+            "input": "Test your knowledge of the refugee crisis with this quiz from @user \u00e2\u017e\u009d can also get 60% off Seeking Refuge: On the Shores of the Refugee Crisis through the end of the month. \u00e2\u017e\u009d",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just information about a quiz to enhance knowledge about refugees. No hate speech."
+        },
+        {
+            "input": "Absolutely in agreement. Genuine refugees welcome. Grown men, with smartphones, pretending to be children - not welcome.",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a constructive opinion about refugees without any hateful language. No hate speech."
+        },
+        {
+            "input": "Illegal Aliens Killed Two Search And Rescue Dogs In Texas wicked infernal barbarians have no place in society!#BuildTheWallNow #DeportThemAll #NoAmnesty#NoDACA#NoMs",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hateful words like iilegal alien, barbarians used."
+        },
+        {
+            "input": "What an idiot. #buildthatwall",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Calling someone idiot, hate speech."
+        },
+        {
+            "input": "Good #immigrant  defintion \u2b07\ufe0f- I'm not winning Olympic gold medals or winning baking competition, will I ever fit in? // post #Brexit struggle...",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a question and discussion on immigrants. No hate speech."
+        },
+        {
+            "input": "@user @user Stop embarrass Media Women -u r media WHORE! @user @user @user @user @user",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Abusive language against women."
+        },
+        {
+            "input": "#Immigration #AbolishICE #BorderPatrol #UnDocumented #SecureBorder#Republicans decided that if the left wants to abolish #ICE then they should submit a bill and get a vote on it.  The #Democratic...",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a discussion on policies regarding immigrants. No hate speech."
+        },
+        {
+            "input": "@user Europe ,Commonwealth Get out now less immigration ask the NHS Schools Housing , crime . we need leaders not sheep listen",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hateful language against immigration. Hate speech."
+        },
+        {
+            "input": "i was called some type of whore or slut bc i was more developed. like since i was like 11 man",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "User tells about hateful language used against them. No direct hate speech."
+        },
+        {
+            "input": "| Woman who accused Nelly of rape wants to drop charges",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a statement about a news a news regarding a criminal case. No hate speech."
+        },
+        {
+            "input": "Your girl is a hoe, she fucked all my bros",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Abusive and insulting language used, trying to demean another person. Hate speech."
+        },
+        {
+            "input": "But Azealia, you're not happy with only having your intellectual equals (AKA the Kunt Brigade). You want Cardi's place. Nicki's place. LOL",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "No hateful or abusive language."
+        },
+        {
+            "input": "Yeah well I didnt suck dick for tips you dirty skank Yes you did you lonely miserable BITCH its called fucking ALIMONY\u270b\ud83c\udffe",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Very abusive language used. Hate speech."
+        },
+        {
+            "input": "Life's too short to be giving people second chances",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just an opinion on people and their behaviours. No hateful or abusive language."
+        },
+        {
+            "input": "How and why i almost became an illegal immigrant via @user",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This tweet seems to tell an anecdote about illegal immigration. No hate speech."
+        },
+        {
+            "input": "When I go out for just one drink",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "No hateful or abusive language."
+        },
+        {
+            "input": "Iraqi Immigrant Who Shot Cop In The Head Was Never Deported Despite Crime Spree via @user",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This tweet talks about a crime commited by an immigrant who still resides in the country. There is no hate speech."
+        },
+        {
+            "input": "Four activists held in France for escorting migrants over border",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a news piece. No hate speech."
+        },
+        {
+            "input": "@user your fucken hot im hot fuck hard do anything you want to be my slut whore and open your holes you HOT SLUT. WE LOVE TO FUCK",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Very abusive and insulting language. Hate speech."
+        },
+        {
+            "input": "#global_jihad #Syria #Daesh",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just some hastags regarding jihad and syria. No hateful language."
+        },
+        {
+            "input": "Say it loud, say it clear, illegal #immigrants are not welcome here",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hateful sppech against illegal immigration."
+        },
+        {
+            "input": "@user @user Lily doesnt know the meaning of Loyal. Shes a hothead alcoholic, mad cuz Jr dismissed her, So she runnin to kiss Ryan Ass! Bye Felicia, & take that skank ass Art thief that YOU hired Out the fuck as well!",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses insulting and hateful language against Lily."
+        },
+        {
+            "input": "We  already have the highest per capita immigration in the world, and the  nearly 30-minute monologue segment failed to mention that Canadians are endlessly coerced:Access to White people is NOT a human right.",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hate speech against immigration."
+        },
+        {
+            "input": "On May 31st World Relief is offering you a unique and exciting opportunity to make a difference for refugees. Can you guess what it is? Here's another hint. This new opportunity will help you advocate for refugees. // #WRLovesRefugees",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "An informative tweet about an event. No hateful speech."
+        },
+        {
+            "input": "Go back and take a vacation to that land you fled in terror for your life from.",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hateful words used for people from different originalities."
+        },
+        {
+            "input": "@user Bishop Schneider: mass migration a plan to undermine identity",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "This tweet suggests immigration as a plot to undermine regional/local identities. Hateful speech."
+        },
+        {
+            "input": "@user @user @user Have no idea what your texting about.",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "No hateful or abusive language."
+        },
+        {
+            "input": "Im so sick of people treating me like SHIT then try to come back in my life after they changed Fuck you fuck your growth cause idgaf skank bitch",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Uses abusive and hateful language against people."
+        },
+        {
+            "input": "DING! DING! DING! Vatican Bishop confesses: \"Senior Catholic officials are being paid off by George Soros to promote mass Muslim migration into Europe\" via @user How to buy the Catholic Church...",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a discussion on a news regrarding a Bishop's statement. No hate speech."
+        },
+        {
+            "input": "COMMON SENSE IS GONE and NEVER COMING BACK!!  GERMAN INSANITY???  The German Government Pays for 3 Week Vacation for Refugees to Go Home | Armstrong Economics",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Shows hate against immigrant community."
+        },
+        {
+            "input": "Dat Whore Karma ah Bitch",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Uses abusive and insulting language."
+        },
+        {
+            "input": "Martin Luther King Jr. once said \u201cour lives begin to end the day we become silent about things that matter.\u201d How will the lens of history judge our response to today's global refugee crisis? World Relief CEO Tim Breene reflects on #WorldRefugeeDay. \u00e2\u017e\u009d",
+            "target_scores": {
+                "hate": 0,
+                "non-hate": 1
+            },
+            "reason": "Just a tweet and discussion regarding current crisis and World refugee day."
+        },
+        {
+            "input": "Mexico\u2019s not sending their best. They\u2019re dumping their killers aka garbage on us.  #StopTheInvasion #DeportThemAll  #NoAmnesty #BuildTheWall",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Calls all people coming from Mexico as killers and demands deportation. Hate speech."
+        },
+        {
+            "input": "So only women can experience sexism? I call BS! #feminismiscancer #EqualityforAll #MAGA",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This tweet talks about sexism and its relation with gender. No hate speech."
+        },
+        {
+            "input": "@user The wall must be very high to stop illegal  immigration",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful words against illegal immigrants."
+        },
+        {
+            "input": "Finnish immigration officials say asylum seekers need more mental health care services",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This tweet talks about me tal health care for asylum seekers. No hate speech."
+        },
+        {
+            "input": "RT @user When u act interested in a story but really ur thinkin about how u ordered pizza an hour ago and it still ain't here h\u2026",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Dissapointment on non delivery of pizza. No hate speech."
+        },
+        {
+            "input": "@user @user @user @user You cunt, compare 25 million that rubius have versus the 5 million that David have",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be a heated discussion about some anecdote from real life or story, but no hate speech."
+        },
+        {
+            "input": "The #AmericanCommunists who live in our country want open borders.#DrainTheSwamp#StopTheInvasion",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "This is hate sppech against incoming refugees and their supporters."
+        },
+        {
+            "input": "You just have power over men altogether, women are men\u2019s ultimate weakness after all... which is why women are slut\u2026",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Insults and makes hateful remarks against women by using abusive language."
+        },
+        {
+            "input": "@user @user bitch we r now TxF sluts",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Uses abusive words, but doesn't seem to hate anyone. No hate speech."
+        },
+        {
+            "input": "@user I hope you are not offering them a choice. To hell with the #Tories #SendThemHome",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Makes hateful remarks against immigrants."
+        },
+        {
+            "input": "@user Going to take a lot more than a skank like you! #wearethestorm",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Seems to be a hateful remark made during a heated argument. Hate speech."
+        },
+        {
+            "input": "Strict government visa restrictions drive up illegal immigration, study finds #HostileEnvironment",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "A news piece reporting a study done on the effects of government policies on illegal immigration. No hate speech."
+        },
+        {
+            "input": "\"Once someone is on Canadian soil and claims asylum, we have an obligation domestically and internationally to grant them a fair hearing.\" #cdnimm #refugees",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Makes a point in support of asylum seeker without hating on any person or community. No hate speech."
+        },
+        {
+            "input": "Congratulations @user & @user for officially raising the dumbest child ever @user please stay out of politics you make Forrest Gump look like Einstein compared to you! #HappyNewYear  #LockHerUp #RETWEET Help #BuildThatWall @ @user",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Makes hateful remarks on a person and their child. Hate speech."
+        },
+        {
+            "input": "@user Sold out to the chicken hawks ya cock \ud83d\udc4a\ud83c\udfff that's You officially part of the swamp GOFUCKYERSEL \ud83d\udc4a\ud83c\udfff",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Insults and makes hateful remarks on some group/community."
+        },
+        {
+            "input": "Hey ladies and men, rape, and sexual assault, etc of any sort is not acceptable in society. For those of you who commit these acts, pls die.",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Makes a remarks on crimes being unacceptable. No hate speech as such."
+        },
+        {
+            "input": "@user Since u r a pathetic self claimed pseudo analyst, don\u2019t bark before you r a bit clear on the subject. Bitch cum whore.",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Makes very abusive and hateful remarks on a person while discussing some matter. Hate speech."
+        },
+        {
+            "input": "@user @user  #NoDACA without Mandatory E-Verify you are not ending ILLEGAL #Immigration You are REWARDING iLLEGALS #NoAmnesty #KeepFamiliesTogether IS DEPORT ALL ILLEGAL FAMILIES TOGETHER #Trump  #MAGA  #RedNationRising",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Shows hate towards illegal immigrants."
+        },
+        {
+            "input": "\u201cOne minute you\u2019re a spooky little witch bitch and then the next you\u2019re an angelic skank singing Oh Holy Night.\u201d HAHA!",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful and abusive words like bitch for a person. Hate speech."
+        },
+        {
+            "input": "Where are those #ypfdj ?  #refugees #Eritrea  #Ethiopia \u00f0\u0178\u02dc\u201a\u00f0\u0178\u02dc\u201a\u00f0\u0178\u02dc\u201a\u00f0\u0178\u02dc\u201a",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be a question regarding some refugees from Ethiopia. No hate speech."
+        },
+        {
+            "input": "@user @user @user @user @user @user @user @user @user @user @user #SundayMotivation #MAGA with President Trump is enoughof a Reason Obama & Nike are an added Bonus#FoLLoW @user",
+            "target_scores": {
+                "hate": 0,
+                "non-hate": 1
+            },
+            "reason": "Seems to give an opinion on why Trump and his slogan is good. No hate sppech directly."
+        },
+        {
+            "input": "When you unfollow someone and they DM you to ask you why...",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be a caption to a meme or a joke regarding social media. No hate speech."
+        },
+        {
+            "input": "@user 3rd, you are a fuckin BIRD you dumb bitch so what anytime you got drunk and had sex it was rape?! I'm sick of you feminazis",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful words like feminazis and makes hateful remarks against women. Hate speech."
+        },
+        {
+            "input": "@user Did you make this? It's hysterical XD Really, really accurate about that group. The only thing mis\u2026",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be a comment on a joke and opinion regarding certain group of people. No hateful remarks directly."
+        },
+        {
+            "input": "Italian Priest Says Anti-Immigration Matteo Salvini Is \u2018\u02dcthe Antichrist\u2019 via @user",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be news piece about an Italian priest's opinon on immigration and religion. No direct hateful remarks."
+        },
+        {
+            "input": "World Relief is thrilled to be included in this list from @user of 5 organizations to support for #WorldRefugeeDay. Check out the other organizations who are doing amazing work to stand with refugees. \u00e2\u017e\u009d",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "This is a tweet about helping refugees around the world. No hate speech."
+        },
+        {
+            "input": "@user CNN. U SHOULD B ASHAMED U ROTTEN DIRTY BITCH 4 MAKE FUN OF SOMEONES DISABILITY, U UGLY CUNT!I hope someone breaks ur legs!",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Makes hateful remarks on someone by wishing ill of them. Hate speech."
+        },
+        {
+            "input": "'Why wont any1 eat my pussy?' well first off we got to many fish markets around here hoe, your pussy should smell pussyishy.. not brim fishy",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Makes sexually hateful remarks. Hate speech."
+        },
+        {
+            "input": "Right! As they rape and butcher women and children !!!!!!",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be making a statement about criminal actions of certain individuals. But no direct hateful words."
+        },
+        {
+            "input": "@user You sat by to engrossed in your own ego .while women were being raped and assaulted. You are a rape ena\u2026",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to be an argument between two people with one suggesting other as a supporter of crimes against women. No direct hate speech."
+        },
+        {
+            "input": "like damn bitch if youre hungry shut the fuck up and eat im trying to sleep!!!",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Makes hateful remarks on someone disturbing them. Hate speech."
+        },
+        {
+            "input": "@user @user Ikr. Of course, men get taken seriously, but women are treated like hysterical whores. So sick and tired of sexism",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Makes a comment on current state of sexism in society. No hate speech."
+        },
+        {
+            "input": "I added a video to a @user playlist Immigrant Black - interview 1",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just some information regarding a video playlist containing interviews. No hate speech."
+        },
+        {
+            "input": "Illegal alien in Utah who was deported raped 7-year-old girl 'thousands of times,' police say",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful words like illegal alien to report a crime. Hate speech."
+        },
+        {
+            "input": "UNTIL 11:59pm PDT TONIGHT \u00e2\u017e\u009d Sign up to help refugees rebuild their lives and we'll give you a free, premium, made to order, fair trade t-shirt courtesy of @user \u00e2\u017e\u009d // (limited to those living in the U.S. 18 &amp; older)",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Requests people to join in on an effort to help refugees. No hate speech."
+        },
+        {
+            "input": "@user @user Open Border Extremisst will only Aid Mexican Cartel making 550 Million a year and abandoning migrant children in the desert #BuildTheWall #Trump #MAGA",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Makes a statement against open borders. No direct hate speech."
+        },
+        {
+            "input": "@user could you try this on for me? #feminismiscancer",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful word like cancer for feminism. Hate speech."
+        },
+        {
+            "input": "After its deal with Turkey to stop Afghan, Iraqi, Syrian &amp; other refugees from reaching the European Union, what can the EU do to reverse Turkey's refugee abuses? Find out at the European Parliament in Brussels at 12:30 pm on 20 June #WorldRefugeeDay@HRW",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Information about Parliament event centered on refugee abuses. No hate speech."
+        },
+        {
+            "input": "Dr. Vliet on #FOXNews 7/12/2014 @user Nothing has changed! #Illegals bring #USA diseases!#BuildThatWall ASAP.@DrLee4America",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hate speech against illegal immigrants by suggesting they all bring diseases. Hate speech."
+        },
+        {
+            "input": "Blame the Illegal Border Crossing Parents they put their kids in Danger sending them with Criminal Coyotes or Crossing the Border Illegally  with them #Trump #MAGA #WakeUpAmerica  #RedNationRising #Immigration",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful language by calling illegal immigrants criminal coyotes. Hate speech."
+        },
+        {
+            "input": "'We women are so crazy and hysterical' I don't see women, cis or trans, killing people for the petteist shit becaus\u2026",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems to suggest that women do not generally commit serious crimes for petty things. No direct hate speech."
+        },
+        {
+            "input": "Wow, Stupid is as Stupidity does These stupid women are stupid Yet, if they are doing this for Trump I hope he is paying them $15,000 per month to talk,rape and act a fool for him @user IdIots, Yea you two",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses hateful language for women by calling all of them stupid and fool. Hate speech."
+        },
+        {
+            "input": "He is in and out of jail. He's a bum , he a pussy bitch ! He just ain't shit ! I pray his next child he do wayyyyy better with fr.",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Makes hateful remarks on the person and his previous children by calling him pussy bitch. Hate speech."
+        },
+        {
+            "input": "You a pussy bitch watch when I catch you I\u2019m beat tf outta you",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Makes hateful remarks by suggesting violence on the person and using abusive language. Hate speech."
+        },
+        {
+            "input": "UN seeks new funding pledges for Palestinian refugees...",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Just a request for help in collecting funds for refugees. No hate speech."
+        },
+        {
+            "input": "@user @user @user youre only tough because this is Twitter. In reality, youre a pussy ass bitch. Stfu. Snowflake #MAGA2020",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Hateful remarks made by using words like pussy ass bitch. Hate speech."
+        },
+        {
+            "input": "MONIKA WAS RIGHT? RIGHT ABOUT WHAT WHAT DID THAT FUCKING BITCH ASS THOT MOTHERFUCKING HO ASS SKANK SAY TO YOU?",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Abusive and hateful words used against Monika. Hate speech."
+        },
+        {
+            "input": "But a small state, low welfare, controlled immigration, right leaning free market capitalist Scotland OUT the EU, with a pro-UK trade &amp; shared national security approach WOULD appeal to me. But thats not, has not &amp; will NEVER be on the table.So it's a resounding NAW for now.",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Some discussions regarding economic, trade and immigration policies of Scotland. No hate speech."
+        },
+        {
+            "input": "I just submitted a comment saying NO to the Citizenship Question .@realDonaldTrump plans to include a citizenship question on the 2020 Census this question will instill fear in immigrant communities &amp; will lead to an undercount of the national population. Submit a comment TODAY!",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Talks about a question in a political survey and its implications. No hate speech."
+        },
+        {
+            "input": "If your dick game is strong, she'll let you get away with anything as long as you're honest with her",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Makes sexual and argumentative remarks. But no direct hate speech."
+        },
+        {
+            "input": "Why end DACA? This is why! The respect right there uncalled for. Send them back, deport asap! #illegalimmigration #wetbacks#AmericaFirst #BuildThatWall #BorderPatrol",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Hateful remarks against illegal immigrants. Hate speech."
+        },
+        {
+            "input": "churches open their doors to migrants not of the foreign kind but the ones who begged a bed but were forgotten now the church has prorities",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Talks about churches' policies and priorities regarding migrants. No direct hate speech."
+        },
+        {
+            "input": "HAPPY BIRTHDAY YOU SKANK @user",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Hateful word skank used for the user. Hate speech."
+        },
+        {
+            "input": "Thank you #Pac12AfterDark #MTN8Final #BMFConference2017 Johann van Graan chile con la ram",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Seems some talk about a conference. No hate speech."
+        },
+        {
+            "input": "@user did you fight for women? Ever???? Did you fight against the AESO in our recession? Did you acknowledge sustainability in the context of our energy industry? Ever??? Shut your stupid fucking cunt mouth.",
+            "target_scores": {
+                "hate": 1,
+                "non-hate": 0
+            },
+            "reason": "Uses abusive and hateful words like cunt for the user. Hate speech."
+        },
+        {
+            "input": "@user I though in a free country you could worship whoever you want too? Isnt america the home of the free? You're a cunt",
+            "target_scores": {
+                "non-hate": 0,
+                "hate": 1
+            },
+            "reason": "Talks about practicing religion freely, but uses abusive word. Hate speech."
+        },
+        {
+            "input": "By pursuing such a reckless and irresponsible course of action, the US is not just creating a situation of hardship and cruelty for the Palestinian refugees,\u2014",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Talks about US's actions regarding Palestinian refugees. No hate speech."
+        },
+        {
+            "input": "Dear Xfactor fans If you would like to slag off the show may I give you a little advice Do what I do and stop...",
+            "target_scores": {
+                "non-hate": 1,
+                "hate": 0
+            },
+            "reason": "Talks about Xfactor show, how bad is it and what to do with it. No direct hate speech."
+        }
+    ]
+}
